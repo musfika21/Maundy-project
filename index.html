@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maundy Bootstrap template Demo</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Roboto font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Raleway font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Poppins font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External CSS file -->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-[url('./assets/bg.webp')] bg-cover bg-center bg-fixed w-full">
+    <!-- header section start -->
+    <header>
+        <!-- Navbar start -->
+        <nav class="text-white w-full pt-7  fixed top-0">
+           <div class="flex justify-between max-w-9/10 mx-auto">
+            <div>
+                <p class="roboto-font text-3xl font-bold cursor-pointer">Maundy</p>
+                </div>
+               <div>
+                <ul class="list-none poppins-regular flex justify-evenly gap-6 text-lg ">
+                    <li class="text-[#21a68d] cursor-pointer transition duration-300">Home</li>
+                    <li class="hover:text-[#21a68d] cursor-pointer transition duration-300">About</li>
+                    <li class="hover:text-[#21a68d] cursor-pointer transition duration-300">Contact</li> 
+                </ul>
+               </div>
+           </div>
+        </nav> 
+        <!-- Navbar end -->
+
+        <!-- Hero Section Start -->
+        <div class="flex items-center flex-col pt-25 pb-20">
+            <h1 class="text-5xl font-bold mb-4 text-white roboto-font">Maundy</h1>
+            <p class="text-2xl mb-10 text-white roboto-font">We are still working on our website. Stay tuned for updates!</p>
+
+            <!-- Countdown Timer -->
+            <div class="flex space-x-4 mb-8 raleway-font">
+                <div class="text-center p-5 border border-white rounded-lg text-white">
+                    <span id="days" class="text-4xl font-bold">0</span>
+                    <p class="mt-4">Days</p>
+                </div>
+                 <div class="text-center p-5 border border-white rounded-lg text-white">
+                    <span id="hours" class="text-4xl font-bold">0</span>
+                    <p class="mt-4">Hours</p>
+                </div>
+                <div class="text-center p-5 border border-white rounded-lg text-white">
+                    <span id="minutes" class="text-4xl font-bold">0</span>
+                    <p class="mt-4">Minutes</p>
+                </div>
+                <div class="text-center p-5 border border-white rounded-lg text-white">
+                    <span id="seconds" class="text-4xl font-bold">0</span>
+                    <p class="mt-4">Seconds</p>
+                </div>
+            </div>
+
+            <!-- Subscription Box -->
+            <p class="mb-4 text-white roboto-font text-xl">Subscribe now to get the latest updates!</p>
+            <div class="flex">
+                <input type="email" class="bg-white px-4 w-110 py-2 rounded-3xl focus:outline-none relative border border-[#24b2a4]">
+                <button class="bg-[#24b2a4] px-5 py-2 rounded-3xl roboto-font border-none text-white -mr-2 absolute right-126 cursor-pointer hover:bg-[#24b2a474]">Subscribe</button>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex gap-6 mt-10">
+                <i class="fa-brands fa-x-twitter text-lg text-white border p-4 rounded-full hover:text-[#24b2a4] cursor-pointer transition duration-300"></i>
+                <i class="fa-brands fa-facebook text-lg text-white border p-4 rounded-full hover:text-[#24b2a4] cursor-pointer transition duration-300"></i>
+                <i class="fa-brands fa-instagram text-lg text-white border p-4 rounded-full hover:text-[#24b2a4] cursor-pointer transition duration-300"></i>
+                <i class="fa-brands fa-linkedin text-lg text-white border p-4 rounded-full hover:text-[#24b2a4] cursor-pointer transition duration-300"></i>
+            </div>
+        </div>
+        <!-- Hero Section end -->
+    </header>
+    <!-- header section end -->
+
+    <!-- Main section start -->
+     <main>
+        <!-- About section start -->
+        <div class="">
+            <h1 class="text-white text-3xl roboto-font font-bold text-center">About</h1>
+            <hr>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+        <!-- About section end -->
+     </main>
+    <!-- Main section end -->
+
+    <!-- Javascript file links -->
+     <script src="script/timer.js"></script>
+</body>
+</html>
