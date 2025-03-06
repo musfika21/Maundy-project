@@ -41,7 +41,7 @@
     <!-- header section start -->
     <header>
         <!-- Navbar start -->
-        <nav class="text-white w-full pt-7  fixed top-0">
+        <nav class="text-white w-full pt-7 fixed top-0">
            <div class="flex justify-between max-w-9/10 mx-auto">
             <div>
                 <p class="roboto-font text-3xl font-bold cursor-pointer">Maundy</p>
@@ -104,7 +104,7 @@
     <!-- Main section start -->
      <main>
         <!-- About section start -->
-        <div id="about" class="mt-28">
+        <div id="about" class="mt-30">
             <h1 class="text-white text-3xl raleway-font font-bold text-center mb-5">About</h1>
             <hr class="text-[#24b2a4] border-t-4 w-14 mx-auto mb-5 ">
             <p class="roboto-font text-white text-center mb-15">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
@@ -146,7 +146,7 @@
         <!-- About section end -->
 
         <!-- Contact section start -->
-        <div id="contact" class="mt-20">
+        <div id="contact" class="mt-30">
             <h1 class="text-white text-3xl raleway-font font-bold text-center mb-5">Contact</h1>
             <hr class="text-[#24b2a4] border-t-4 w-14 mx-auto mb-5 ">
             <p class="roboto-font text-white text-center mb-15">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
@@ -158,7 +158,7 @@
             <div class="col-span-2 flex flex-col gap-10">
                 <!-- address -->
                 <div class="flex items-center gap-8">
-                    <i class="fa-solid fa-location-dot text-2xl text-[#24b2a4] bg-opacity-10 p-3 rounded-full"></i>
+                    <i class="fa-solid fa-location-dot text-2xl text-[#24b2a4] p-3 rounded-full"></i>
                     <div>
                         <h4 class="text-xl text-white font-bold raleway-font">Address</h4>
                         <p class="text-white roboto-font text-sm">A108 Adam Street, New York, NY 535022</p>
@@ -166,7 +166,7 @@
                 </div>
                 <!-- call us -->
                 <div class="flex items-center gap-8">
-                    <i class="fa-solid fa-phone text-2xl text-[#24b2a4] bg-opacity-10 p-3 rounded-full"></i>
+                    <i class="fa-solid fa-phone text-2xl text-[#24b2a4] p-3 rounded-full"></i>
                     <div>
                         <h4 class="text-xl text-white font-bold raleway-font">Call Us</h4>
                         <p class="text-white roboto-font text-sm">+1 5589 55488 55</p>
@@ -174,22 +174,86 @@
                 </div>
                 <!-- email us -->
                 <div class="flex items-center gap-8">
-                    <i class="fa-solid fa-envelope text-2xl text-[#24b2a4] bg-opacity-10 p-3 rounded-full"></i>
+                    <i class="fa-solid fa-envelope text-2xl text-[#24b2a4] p-3 rounded-full"></i>
                     <div>
                         <h4 class="text-xl text-white font-bold raleway-font">Email Us</h4>
                         <p class="text-white roboto-font text-sm">info@example.com</p>
                     </div>
                 </div>
             </div>
-
             <!-- right form -->
             <div class="col-span-5 pl-25">
-                <input type="text" name="" id="">
+                <!-- first line of the form -->
+                <div class="flex gap-5">
+                    <input type="text" name="" id="" placeholder="Your Name" class="border-white opacity-20 focus:outline-none focus:border-[#24b2a4] text-white px-3 py-2 w-1/2">
+                    <input type="email" name="" id="" placeholder="Your Email" class="border-white opacity-20 focus:outline-none focus:border-[#24b2a4] text-white px-3 py-2 w-1/2">
+                </div>
+                <!-- subject -->
+                <input type="text" name="" id="" placeholder="Subject" class="border-white opacity-20 focus:outline-none focus:border-[#24b2a4] text-white px-3 py-2 w-full mt-5">
+                <!-- message -->
+                <textarea name="" id="" placeholder="Message" class="border-white opacity-20 focus:outline-none focus:border-[#24b2a4] text-white w-full h-35 mt-5"></textarea>
+                <!-- button -->
+                <div class="flex items-center justify-center mt-5">
+                    <button class="bg-[#35d8c8dc] text-white px-8 py-2 rounded-4xl text-center cursor-pointer hover:bg-[#24b2a4] transition duration-200">Send Message</button>
+                </div>
             </div>
         </div>
         <!-- Contact section end -->
      </main>
     <!-- Main section end -->
+
+    <!-- Footer Start -->
+    <footer class="mt-25">
+        <!-- icons and info -->
+        <div class="max-w-6/7 mx-auto flex items-center gap-30 mb-10">
+            <!-- address -->
+            <div class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-2xl text-[#24b2a4] p-3 rounded-full"></i>
+                <div>
+                    <h4 class="text-xl text-white font-bold raleway-font mb-3">Address</h4>
+                    <p class="text-white roboto-font text-sm">A108 Adam Street<br>New York, NY 535022</p>
+                </div>
+            </div>
+            <!-- contact -->
+            <div class="flex items-start gap-3">
+                <i class="fa-solid fa-phone text-2xl text-[#24b2a4] p-3 rounded-full"></i>
+                <div>
+                    <h4 class="text-xl text-white font-bold raleway-font mb-3">Contact</h4>
+                    <p class="text-white roboto-font text-sm"><span class="font-bold">Phone:</span> +1 5589 55488 55</p>
+                    <p class="text-white roboto-font text-sm"><span class="font-bold">Email:</span> info@example.com</p>
+                </div>
+            </div>
+            <!-- opening hours -->
+            <div class="flex items-start gap-3">
+                <i class="fa-solid fa-clock text-2xl text-[#24b2a4] p-3 rounded-full"></i>
+                <div>
+                    <h4 class="text-xl text-white font-bold raleway-font mb-3">Contact</h4>
+                    <p class="text-white roboto-font text-sm"><span class="font-bold">Mon-Sat:</span> 11AM - 23PM</p>
+                    <p class="text-white roboto-font text-sm"><span class="font-bold">Sunday:</span> Closed</p>
+                </div>
+            </div>
+            <!-- follow -->
+            <div>
+                <h4 class="text-xl text-white font-bold raleway-font mb-3">Follow Us</h4>
+                <div class="flex gap-6">
+                    <i class="fa-brands fa-x-twitter text-lg text-white border p-3 rounded-full hover:text-[#24b2a4] cursor-pointer transition duration-300"></i>
+                    <i class="fa-brands fa-facebook text-lg text-white border p-3 rounded-full hover:text-[#24b2a4] cursor-pointer transition duration-300"></i>
+                    <i class="fa-brands fa-instagram text-lg text-white border p-3 rounded-full hover:text-[#24b2a4] cursor-pointer transition duration-300"></i>
+                    <i class="fa-brands fa-linkedin text-lg text-white border p-3 rounded-full hover:text-[#24b2a4] cursor-pointer transition duration-300"></i>
+                </div>
+            </div>
+        </div>
+        <!-- horizontal line -->
+        <hr class="mb-10 max-w-6/7 mx-auto text-white opacity-20">
+        <!-- foot of the web site start -->
+        <div class="roboto-font">
+            <p class="text-white text-center text-base mb-2">&copy; Copyright <span class="font-bold">Maundy</span> All Rights Reserved</p>
+            <p class="text-white text-center text-sm pb-10">Designed by<span class="text-[#24b2a4] cursor-pointer"> Musfika Iqfat</span></p>
+        </div>
+        <!-- foot of the web site end -->
+    </footer>
+    <!-- Footer end -->
+
     <!-- Javascript file links -->
      <script src="script/timer.js"></script>
 </body>
